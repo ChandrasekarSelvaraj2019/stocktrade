@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS stock_trade;
+
+CREATE TABLE stock_trade (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  type VARCHAR(250) NOT NULL,
+  userId INT NOT NULL,
+  symbol VARCHAR(250) DEFAULT NULL,
+  shares INT NOT NULL,
+  price INT NOT NULL,
+  timestamp TIMESTAMP DEFAULT NOT NULL
+);
